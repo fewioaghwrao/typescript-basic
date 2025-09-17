@@ -5,9 +5,9 @@ type Post = {
  published: boolean;  // 公開済みかどうか
 };
 
-type postEdit = Partial<Post>;//編集中
+type processPost = Partial<Post>;//編集中
 
-type showEdit = Pick<Post, 'id' | 'title'>;//一覧表示用
+type showPost = Pick<Post, 'id' | 'title'>;//一覧表示用
 
-type openEdit = Readonly<Post>;//公開済み
+type openPost = Readonly<Post>;//公開済み
 
